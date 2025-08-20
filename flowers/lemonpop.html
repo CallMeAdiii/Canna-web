@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lemon Pop</title>
+  <link rel="stylesheet" href="../main/style.css"/>
+  <link rel="stylesheet" href="../vapes/vapestyle.css"/>
+  <link rel="stylesheet" href="../vapes/details.css"/>
+  <link rel="stylesheet" href="navbar.css"/>
+</head>
+<body>
+<nav class="navbar">
+  <div class="nav-container">
+    <a href="../main/index.html" class="nav-link">Main page</a>
+    <a href="../vapes/vapes.html" class="nav-link">Vapes</a>
+    <a href="flowers.html" class="nav-link">Flowers</a>
+    <a href="#" class="nav-link">Leftover</a>
+    <a href="../exotics/exotics.html" class="nav-link">Exotics</a>
+  </div>
+</nav>
+
+<div class="product-container">
+
+  <div class="media-wrapper">
+    <div class="slider">
+      <div class="slides">
+        <img src="../vapes/iconcarts.png" alt="VapeX Nova 5000" class="product-image" />
+        <img src="../vapes/iconcarts.png" alt="Další obrázek" class="product-image" />
+        <video src="../vapes/demo.mp4" class="product-image" controls></video>
+      </div>
+      <button class="prev">&#10094;</button>
+      <button class="next">&#10095;</button>
+    </div>
+  </div>
+
+  <script>
+    const slides = document.querySelector('.slides');
+    const slideItems = document.querySelectorAll('.slides img, .slides video');
+    let index = 0;
+
+    document.querySelector('.next').addEventListener('click', () => {
+      index = (index + 1) % slideItems.length;
+      slides.style.transform = `translateX(-${index * 100}%)`;
+    });
+
+    document.querySelector('.prev').addEventListener('click', () => {
+      index = (index - 1 + slideItems.length) % slideItems.length;
+      slides.style.transform = `translateX(-${index * 100}%)`;
+    });
+  </script>
+
+  <div class="product-details">
+    <h1 class="product-title"><span class="hover-word">LEMON POP</span></h1>
+    <p class="product-description">
+      <strong>
+        Very dry, big buds, grown in the glasshouse, good infusion, sort of orange-ish, longer buds, interesting smell, gives a good high.
+      </strong>
+    </p>
+
+    <div class="additional-details">
+      <h2 class="subtitle">1. VARIETY</h2>
+      <ul class="flavor-list">
+        <li>40% HHC</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="product-price-section">
+    <h2 class="price-title">Prices</h2>
+    <ul class="price-list">
+      <li>
+        <span class="price-quantity">1-5 Piecies</span>
+        <span class="price-amount">16€</span>
+      </li>
+      <li>
+        <span class="price-quantity">6-15 Pieces</span>
+        <span class="price-amount">14 €</span>
+      </li>
+      <li>
+        <span class="price-quantity">16-35 Pieces</span>
+        <span class="price-amount">12 €</span>
+      </li>
+      <li>
+        <span class="price-quantity">36-50 Piecies</span>
+        <span class="price-amount">10€</span>
+      </li>
+      <li>
+        <span class="price-quantity">51+ Piecies</span>
+        <span class="price-amount">8€</span>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <h2 class="footer-title">Contact</h2>
+    <div class="contacts">
+      <div class="contact-item">
+        <img src="../main/Telegram_logo.png" alt="Telegram Icon" class="contact-icon">
+        <div>
+          <strong>Telegram group:</strong><br>
+          <a href="https://t.me/CannaissanceEurope"  target="_blank" rel="noopener">Click here to join</a>
+        </div>
+      </div>
+      <div class="contact-item">
+        <img src="../main/signal_logo.png" alt="Signal app icon" class="contact-icon">
+        <div>
+          <strong>Signal:</strong><br>
+          <a href="https://signal.group/#CjQKIDWFazpHmDGNFQU9vbP-b2AvQSUOaJZX2kRXXjwYioMaEhC2GSGgWqjnoj7ITFkSjSXy"  target="_blank" rel="noopener">Click here to join</a>
+        </div>
+      </div>
+      <div class="contact-item">
+        <img src="../main/discord_logo.png" alt="Discord Icon" class="contact-icon">
+        <div>
+          <strong>Discord:</strong><br>
+          <a href="https://discord.gg/FCxWPuHx" target="_blank" rel="noopener">Click here to join</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
