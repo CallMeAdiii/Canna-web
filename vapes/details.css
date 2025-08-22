@@ -206,3 +206,28 @@ button.next { right: 10px; }
 
 .kratzir-yellow { color: #ffffff; transition: color 0.3s; }
 .kratzir-yellow:hover { color: #ffff00; }
+
+@media (max-width: 768px) {
+    .media-wrapper,
+    .product-price-section {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    .slides {
+        justify-content: center;
+    }
+
+    .price-list li {
+        justify-content: center;
+        gap: 1rem;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .price-quantity,
+    .price-amount {
+        text-align: center;
+    }
+}
