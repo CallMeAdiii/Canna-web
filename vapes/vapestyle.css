@@ -63,3 +63,15 @@
         max-width: 1400px;
         margin: 0 auto;
         padding: 0 1rem;
+
+    @media (max-width: 600px) {
+        .product-card {
+            max-width: 100%;
+            margin: 0 auto 24px;
+            padding: 1rem;
+            height: auto;
+        }
+        .card-grid {
+            grid-template-columns: 1fr;
+        }
+    }

@@ -185,3 +185,50 @@ a:hover {
     color: white;
     transition: color 0.3s ease;
 }
+
+@media (max-width: 600px) {
+    .container {
+        padding: 0 12px;
+    }
+    .center {
+        min-height: auto;
+        padding: 40px 0;
+    }
+
+    h1 {
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+    .subtitle {
+        font-size: 1.2rem;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+        margin-top: 24px;
+    }
+
+    .card {
+        padding: 16px;
+    }
+
+    .footer-inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contacts {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+}
+@media (max-width: 400px) {
+    h1 {
+        font-size: 1.75rem;
+    }
+    .card,
+    .contact-item {
+        padding: 12px;
+    }
+}
